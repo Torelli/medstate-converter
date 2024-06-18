@@ -20,6 +20,8 @@ function convertToArray(responses: string, minutes: string) {
     .join()
     .split(",");
 
+  console.log(minutesArr)
+
 
   return { responseArr, minutesArr }
 }
