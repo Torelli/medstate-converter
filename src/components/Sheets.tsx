@@ -20,9 +20,6 @@ function convertToArray(responses: string, minutes: string) {
     .join()
     .split(",");
 
-  console.log(minutesArr)
-
-
   return { responseArr, minutesArr }
 }
 
@@ -123,7 +120,6 @@ function convertToSheetAndDownload(responses: string, minutes: string) {
   XLSX.utils.book_append_sheet(workbook, pairResponses, 'Duplas')
 
   const trioResponses = XLSX.utils.json_to_sheet(trioResponseArray)
-  console.table(trioResponseArray)
 
   XLSX.utils.sheet_add_aoa(
     trioResponses,
