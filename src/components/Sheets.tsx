@@ -130,7 +130,7 @@ function convertToSheetAndDownload(responses: string, minutes: string) {
     }
   )
 
-  XLSX.utils.book_append_sheet(workbook, pairResponses, 'Tercetos')
+  XLSX.utils.book_append_sheet(workbook, trioResponses, 'Tercetos')
 
   XLSX.writeFile(workbook, "dados_convertidos.xlsx", {
     compression: true
